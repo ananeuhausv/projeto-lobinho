@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lista-de-lobinhos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="lista-de-lobinhos.js"></script>
+    <title>Lista de Lobos</title>
+    <link rel="shortcut icon" href="assets/Group 3.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="lista-de-lobinhos.html" class="animacao">Nossos Lobinhos</a>
+        <a href="index.html"> 
+            <img src="assets/Group 3.png" alt="Descrição da imagem">
+        </a>
+        <a href="quem-somos.html" class="animacao"> Quem Somos</a>
+    </header>
+    <main>
+        <div class="pesquisa">
+            <div class="barra-pesquisa">
+                <form action="lista-de-lobinhos.html">
+                    <input type="text" name="nome" id="search" placeholder="digite">
+                    <input type="submit" style="display: none;">
+                </form>
+                <a href="adicionar-lobinho.html">
+                    <button id="add-lobo">+ Lobo</button>
+                </a>
+                
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mostrar-adotados">
+                <label for="mostrar-adotados">Ver lobinhos adotados</label>
+            </div>
+        </div>
+
+        <div class="lobos-exemplos">
+            
+        </div>
+        <div class="paginas" style="display: none;">
+            <span onclick="anterior()"><<</span>
+            <p style="display: inline;">  1  2  3  4  5 ... </p>
+            <span onclick="proximo()">  >></span>
+        </div>
+    </main>
+
+    <footer>
+        <div class="iframe-texto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1873241132193!2d-43.135835124991324!3d-22.906460537858802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e444e692b%3A0xfd5e35fb577af2f5!2sUFF%20-%20Instituto%20de%20Computa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1739198879659!5m2!1spt-BR!2sbr" width="250" height="168" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="texto">
+            <p><img src="assets/placeholder-for-map.png" alt="placeholder-for-map"> Av. Milton Tavares de Souza, s/n - Sala 115 B - Boa Viagem, Niterói - RJ, 24210-315</p>
+            <p><img src="assets/call-answer.png" alt="call-answer"> (99) 99999-9999</p>
+            <p><img src="assets/envelope.png" alt="envelope"> salve-lobos@lobINhos.com</p>
+            <form action="quem-somos.html">
+                <button type="submit" class="botao-footer">Quem Somos</button>
+              </form>
+        </div>
+    </div>
+        <div class="imagem">
+            <p>Desenvolvido com</p>
+            <img src="assets/paws.png" alt="pata" width="104" height="104">
+        </div>
+    </footer>
+
+    <div class="exemplo2" id="modeloDireita" style="display: none;">
+        <div class="fundo-exemplo2"></div>
+        <img src="assets/Mask Group (1).png" alt="Lobo Exemplo">
+        <div class="texto-exemplo2">
+            <div class="titulo-botao2">
+                <h4>Nome do Lobo</h4>
+                <button class="botao-adotar2">Adotado</button>
+            </div>
+        <p class="idade">Idade: XX anos</p>
+        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
+        <p class="adotado" style="display: none;">Adotado por: Rafael Carrilho</p>
+        </div>
+    </div>
+    <div class="exemplo1" id="modeloEsquerda" style="display: none;">
+        <div class="fundo-exemplo"></div>
+        <img src="assets/Mask Group.png" alt="Lobo Exemplo">
+        <div class="texto-exemplo">
+            <div class="titulo-botao">
+                <h4>Nome do Lobo</h4>
+                <button class="botao-adotar">Adotar</button>
+                
+            </div>
+            <p class="idade">Idade: XX anos</p>
+            <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
+            <p class="adotado" style="display: none;">Adotado por: Rafael Carrilho</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

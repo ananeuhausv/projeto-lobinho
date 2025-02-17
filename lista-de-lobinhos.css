@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Darker Grotesque';
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #85CDF5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+}
+header a{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #333333;
+    position: relative;
+}
+.animacao::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #333333;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s ease-in-out;
+}
+
+.animacao:hover::after {
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 2259px;
+}
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 10px;
+}
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.barra-pesquisa input{
+    width: 808px;
+    height: 47px;
+    font-size: 24px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 50px;
+    background: url(assets/paw-print.png) no-repeat left center; 
+    background-size: 30px;
+    background-position: 10px;
+}
+.barra-pesquisa ::placeholder{
+    color: #FFFFFF;
+}
+.barra-pesquisa button{
+    width: 130px;
+    height: 47px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48.82px;
+    color: #FFFFFF;
+    background-color: #DEB959;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background-color:  rgb(197, 158, 61);
+    }
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 950px;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+.checkbox input{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    background-color: #FAFAFA;
+}
+.checkbox label{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.lobos-exemplos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+.exemplo1{
+    width: 1000px;
+    height: 361px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    position: relative;
+    padding: 30px;
+    margin-bottom: 120px;
+}
+.fundo-exemplo {
+    position: absolute;
+    top: -20px; 
+    left: -20px;
+    width: 430px;
+    height: 328px;
+    background-color: #2c5676; 
+    border: 5px solid black; 
+    z-index: 0;
+}
+.exemplo1 img{
+    width: 430px;
+    height: 328px;
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    z-index: 1;
+}
+.texto-exemplo{
+    width: 461px;
+    height: 339px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+.texto-exemplo h4{
+    font-size: 36px;
+    line-height: 48px;
+}
+.idade{
+    width: 150px;
+    height: 27px;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 10px 0;
+}
+.texto-exemplo p{
+    font-size: 24px;
+    line-height: 20px;
+    color: #000000;
+}
+.titulo-botao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.botao-adotar{
+    width: 157px;
+    height: 46px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 49px;
+    background-color: #DEB959;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.exemplo2{
+    width: 1000px;
+    height: 361px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
+    position: relative;
+    padding: 30px;
+    text-align: right;
+    margin-bottom: 120px;
+}
+.fundo-exemplo2 {
+    position: absolute;
+    top: 80px; 
+    left: 590px;
+    width: 430px;
+    height: 328px;
+    background-color: #2c5676; 
+    border: 5px solid black; 
+    z-index: 0;
+}
+.exemplo2 img{
+    width: 430px;
+    height: 328px;
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    z-index: 1;
+}
+.texto-exemplo2{
+    width: 461px;
+    height: 339px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
+.texto-exemplo2 h4{
+    font-size: 36px;
+    line-height: 48px;
+}
+.idade{
+    width: 150px;
+    height: 27px;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 10px 0;
+}
+.texto-exemplo2 p{
+    font-size: 24px;
+    line-height: 20px;
+    color: #000000;
+}
+.titulo-botao2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.botao-adotar2{
+    width: 157px;
+    height: 46px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 49px;
+    background-color: #7AAC3A;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    order: -1;
+}
+.adotado{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.paginas {
+    width: 100em;
+    text-align: center;
+    height: 21px;
+}
+.paginas span {
+    cursor: pointer;
+}
+
+.paginas p, .paginas span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    font-family: 'Roboto';
+}
+
+footer {
+    padding: 30px 80px;
+    background-color: rgb(51, 51, 51);
+    height: 275px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, rgb(222, 185, 89), rgb(44, 86, 128)) 1;
+}
+.iframe-texto{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.texto > p {
+    width: 378px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.imagem > p {
+    color: white;
+    font-size: 1em;
+}
+
+.botao-footer {
+    margin-top: 15px;
+    background-color: rgb(222, 185, 89);
+    text-align: center;
+    width: 144px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+
+    &:hover{
+        background-color:  rgb(197, 158, 61);
+    }
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

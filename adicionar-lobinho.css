@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Darker Grotesque';
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #85CDF5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+}
+header a{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #333333;
+    position: relative;
+}
+.animacao::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #333333;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s ease-in-out;
+}
+
+.animacao:hover::after {
+    width: 100%;
+}
+
+.adicionar-lobo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dados{
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome, .idade{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nome > input {
+    width: 560px;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+    background-color: #e6e6e6;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.nome label{
+    position: relative;
+    left: -125px;
+    text-align: left; /* Garante que o texto do label esteja alinhado */
+    margin-bottom: 5px;
+    position: static;
+}
+.idade > input {
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    left: 0px;
+    background-color: #e6e6e6;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.idade label{
+    position: relative;
+    left: -20px;
+    text-align: left; /* Garante que o texto do label esteja alinhado */
+    margin-bottom: 5px;
+    position: static;
+}
+
+.square {
+    width: 958px; 
+    border: 2px solid black;
+    background-color: white;
+    text-align: center; 
+    margin: 180px auto 180px auto;
+    height: 874px;
+    
+}
+
+.adicionar-lobo h2{
+    width: 760px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-family: "Darker Grotesque", serif;
+    font-size: 40px;
+}
+
+.foto{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.foto input {
+    width: 760px;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+    margin-bottom: 10px;
+    background-color: #e6e6e6;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.foto textarea {
+    width: 760px;
+    height: 350px;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+    margin-bottom: 0px;
+    background-color: #E6E6E6;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.adicionar-lobo button{
+    background-color: #2C5680;
+    color: #FFFFFF;
+    margin-top: 0px;
+    position: relative;
+    top: 0px;
+
+    &:hover{
+        background-color: #113b65;
+    }
+}
+
+.dados label{
+    font-family: "Darker Grotesque", serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.foto label{
+    width: 760px;
+    font-family: "Darker Grotesque", serif;
+    font-size: 20px;
+    text-align: left; /* Garante que o texto do label esteja alinhado */
+    margin-bottom: 5px;
+    position: static;
+    margin-left: 10px;
+}
+
+footer {
+    padding: 30px 80px;
+    background-color: rgb(51, 51, 51);
+    height: 275px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, rgb(222, 185, 89), rgb(44, 86, 128)) 1;
+}
+.iframe-texto{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.texto > p {
+    width: 378px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.imagem > p {
+    color: white;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 15px;
+    background-color: rgb(222, 185, 89);
+    text-align: center;
+    width: 144px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+
+    &:hover{
+        background-color:  rgb(197, 158, 61);
+    }
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
