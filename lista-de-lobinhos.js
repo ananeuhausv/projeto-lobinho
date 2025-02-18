@@ -1,6 +1,7 @@
 const objetosPorPagina = 4
 let paginaAtual = 1
 let totalPaginas = null
+let lobos = []
 
 function anterior() {
     if (paginaAtual > 1) {
@@ -102,8 +103,16 @@ function atualizarNumerosPagina() {
     listar();
   }
 
-let lobos = JSON.parse(localStorage.getItem('lobos'))
-console.log(lobos.length)
+async function pegarLobo() {
+    const resposta = await fetch('http://localhost:3000/lobinhos')
+    lobos = await resposta.json()
+
+    .catch(err => console.log("Erro de solicitação", err));
+    console.log(lobos)
+
+    listar()
+}
+
 let lista = document.querySelector(".lobos-exemplos")
 const urlParams = new URLSearchParams(window.location.search)
 let nome = urlParams.get('nome')
@@ -117,4 +126,5 @@ const adotados = document.querySelector("#mostrar-adotados")
 adotados.addEventListener("click", () => {
     listar()
 })
-listar()
+
+pegarLobo()
