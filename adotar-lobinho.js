@@ -46,6 +46,6 @@ async function adotar() {
                     emailDono: document.querySelector("input[name='email']").value
                 })
             })
+            window.location.href = 'lista-de-lobinhos.html'
         }
-        window.location.href = 'lista-de-lobinhos.html'
 }
